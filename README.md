@@ -33,13 +33,13 @@ Although Intel Skylake is old now (2023), it is still enough for most computing 
 | Storage | SanDisk 256GB 2.5" SSD |
 | GPU | Intel HD Graphics 530 |
 | Monitor | Dell U2419HC 1080p |
-| Audio Codec | Conexant CX7501 |
+| Audio Codec | Conexant ~~CX7501~~ CX20724 |
 | Network | Intel I219LM |
 | Wifi / BT | _PENDING_ |
 
 ## Not Working
-- Audio 
-- Glitches in DP, HDMI not waking up from sleep
+- Glitches in video output.  
+DP flickering, HDMI not waking up from sleep
 - RTC
 
 ## Notes
@@ -53,6 +53,12 @@ Although Intel Skylake is old now (2023), it is still enough for most computing 
 ## Revision History
 ---
 
+- ### **v.0.2 - 08-May-23**
+    - Fixed audio  
+    Coded was detected as `CX20724` by HWiNFO, which is supported by AppleALC.
+
 - ### **v0.1 - 07-May-23**
     - Updated original README
     - Initial EFI config (booted first time!) using OpenCore 0.9.1
+    Config made from scratch by following [Dortania's Guide](https://dortania.github.io/OpenCore-Install-Guide/).
+    - USB Map taken from @demon3434
